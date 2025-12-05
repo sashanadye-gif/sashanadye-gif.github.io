@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dmitri-Music Radio</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #00ffff;
+    text-align: center;
+    padding-top: 80px;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 22px;
+}
+</style>
+</head>
+<body>
+<h1>Dmitri Music Radio</h1>
+<p>Bienvenido a la emisora oficial de DJ Sasha.</p>
+<p>Más contenido pronto...</p>
+</body>
+</html>
