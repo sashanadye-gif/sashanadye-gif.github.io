@@ -43,6 +43,52 @@ body {
     <source src="https://sonic.mistreamingtv.uno:8008/stream" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
 </audio>
+    <!-- FORMULARIO PARA PEDIR CANCIÓN -->
+<div style="
+    background:#0a0a0a;
+    border:1px solid #00ffff;
+    border-radius:12px;
+    padding:20px;
+    max-width:500px;
+    margin:40px auto;
+    color:#00ffff;
+    font-family:Arial;">
+    
+    <h2>📨 Pedir Canción</h2>
+    <p style="font-size:15px;">Envía tu tema y DJ Sasha lo pondrá en vivo 🎧</p>
+
+    <form action="https://formsubmit.co/sashanadye@gmail.com" method="POST">
+
+        <!-- RESPUESTA AUTOMÁTICA -->
+        <input type="hidden" name="_autoresponse" 
+               value="🎶 Gracias por pedir tu canción. DJ Sasha ya recibió tu solicitud y la revisará en breve.">
+
+        <!-- ASUNTO DEL CORREO -->
+        <input type="hidden" name="_subject" value="Nueva petición de canción - Dmitri-Music">
+
+        <!-- FORMATO DE TABLA -->
+        <input type="hidden" name="_template" value="table">
+
+        <label>Tu nombre:</label><br>
+        <input type="text" name="Nombre" required
+               style="width:100%; padding:10px; margin:8px 0; border-radius:8px;">
+
+        <label>Canción solicitada:</label><br>
+        <input type="text" name="Cancion" required
+               style="width:100%; padding:10px; margin:8px 0; border-radius:8px;">
+
+        <label>Mensaje (opcional):</label><br>
+        <textarea name="Mensaje" rows="3"
+                  style="width:100%; padding:10px; border-radius:8px;"></textarea>
+
+        <button type="submit"
+                style="margin-top:12px; width:100%; padding:12px; background:#00ffff; border:none; color:#000; font-weight:bold; border-radius:8px;">
+            ENVIAR 🎶
+        </button>
+
+    </form>
+</div>
+
 
 <!-- CHAT CENTRADO Y MÁS PEQUEÑO -->
 <h2 style="color:#00ffff; font-family:Arial; margin-top:40px;">
@@ -71,6 +117,7 @@ src="//st.chatango.com/js/gz/emb.js" style="width:100%; height:350px;">
 
 </body>
 </html>
+
 
 
 
