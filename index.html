@@ -9,57 +9,58 @@ body {
     background: #000;
     color: #00ffff;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
 }
-h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-p {
-    font-size: 22px;
+
+/* Contenedor del chat centrado */
+.chat-container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #000;
+    border-radius: 10px;
 }
 </style>
 </head>
-<body>
-   <!-- LOGO PRINCIPAL -->
-<div style="text-align:center; margin-top:20px; margin-bottom:20px;">
-    <img src="f136954a-0ac5-4577-864a-0c4c1668f680.png" 
-         alt="Dmitri-Music Logo"
-         style="max-width:260px; width:90%; border-radius:10px;">
-</div>
 
+<body>
+
+<!-- LOGO -->
+<img src="f136954a-0ac5-4577-864a-0c4c1668f680.png" 
+     alt="Logo Dmitri Music"
+     style="max-width:250px; margin-bottom:20px;">
 
 <h1>Dmitri Music Radio</h1>
 <p>Bienvenido a la emisora oficial de DJ Sasha.</p>
-<p>Más contenido pronto...</p>
-    <!-- REPRODUCTOR -->
-<div style="text-align:center; padding:20px;">
-    <h2 style="color:#00ffff; font-family:Arial;">🎧 En Vivo 🎶</h2>
 
-    <audio controls autoplay style="width:80%; max-width:400px;">
-        <source src="https://sonic.mistreamingtv.uno:8008/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-    </audio>
+<!-- ⭐ NUEVO TÍTULO PARA EL REPRODUCTOR -->
+<h2 style="color:#00ffff; font-family:Arial; margin-top:30px;">
+🎧 Escuchar Radio en Vivo
+</h2>
+
+<!-- REPRODUCTOR -->
+<audio controls autoplay style="width:80%; max-width:400px;">
+    <source src="https://sonic.mistreamingtv.uno:8008/stream" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+</audio>
+
+<!-- CHAT CENTRADO Y MÁS PEQUEÑO -->
+<h2 style="color:#00ffff; font-family:Arial; margin-top:40px;">
+💬 Chat en Vivo
+</h2>
+
+<div class="chat-container">
+<script id="cid0020000426547183434" data-cfasync="false" async
+src="//st.chatango.com/js/gz/emb.js" style="width:100%; height:350px;">
+{"handle":"dmitri-music-chat","arch":"js",
+"styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF",
+"k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF",
+"p":"10","q":"0084ef","r":100,"fwtickm":1}}
+</script>
 </div>
-    <!-- CHAT EN VIVO -->
-<div style="text-align:center; padding:20px; margin-top:30px;">
-    <h2 style="color:#00ffff; font-family:Arial;">💬 Chat en Vivo</h2>
-
-    <div style="max-width:600px; height:450px; margin:auto;">
-        <script id="cid0020000426547183434" data-cfasync="false" async
-        src="//st.chatango.com/js/gz/emb.js" style="width: 100%; height: 100%;">
-        {"handle":"dmitri-music-chat","arch":"js","styles":{
-        "a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF",
-        "k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF",
-        "p":"10","q":"0084ef","r":100,"fwtickm":1}}
-        </script>
-    </div>
-</div>
-
 
 </body>
 </html>
-
 
 
 
